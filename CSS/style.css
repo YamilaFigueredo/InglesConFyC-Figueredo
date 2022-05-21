@@ -1,10 +1,9 @@
 *{
     margin:0;
     padding:0;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
-
-/* Fuentes */
+/* Estilo de header */
 @font-face{
     font-family:"Loves";
     src: url("../fonts/LOVES.ttf");
@@ -13,24 +12,258 @@
     font-family: "Alegre";
     src: url("../fonts/AlegreSans-Regular.ttf");
 }
-
-/* Estilo header */
 .header{
     background-color: #00C897;
     position: sticky;
     top:0%;
     font-family: "Loves";
     color: black;
-    display: flex;
-    flex-direction: row-reverse;
 }
-
+.configLogo{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    width: 8%;
+    height: auto;
+}
 .navegacion{
     list-style: none;
-    margin-left: 10%;
+    background-color: #00C897;
+    width:100%;
+    display:flex;
+    text-align: center;
+    justify-content: space-around;
+}
+.navegacion__items{
+    margin-bottom: 10px;
+} 
+.navegacion__items a{
+    font-weight: bolder;
+    color: #FFD365;
+    text-decoration: none;
+}
+.navegacion__items a:hover{
+    color: #FDFFA9;
 }
 
-.logo{
+/* Estilo de footer */
+.contenedor{
+    background-color: #019267;
+    font-family: "Loves";
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.contenedor__columnas{
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.title{
+    font-size: 16px;
+    margin-left: 20%;
+    color: #FDFFA9;
+}
+.contenido-listas{
+    list-style: none;
+    font-size: 14px;
+    margin-left: 20%;
+}
+.contenido-listas a{
+    text-decoration: none;
+    color: #FFD365;
+}
+
+
+/* Estilo de main index*/
+.portada{
+    background-image: url("../img/smiling.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+.tituloPrincipal{
+    font-family: "Loves";
     width: 30%;
+    font-size: 60px;
+    margin-top: 10%;
+    margin-left: 10%;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+}
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }    
+}
+.btn{
+    background-color: #FDFFA9;
+    font-size: 160%;
+    font-family: "Loves";
+    border-radius: 12px;
+    width:fit-content;
+    margin-left: 10%;
+}
+.btn:hover{
+    background-color: #FFD365;
+}
+.seccion2{
+    font-family: "Loves";
+    width: 100%;
+    margin-bottom: 10%;
+    background-color: #FDFFA9;
+    height: 60vh;
+}
+.nuestrosCursos{
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;
+}
+.table{
+    text-align: center;
+    margin: auto;
+    border-style: none;
+    height: 150px;
+    font-weight: bold;
+}
+.contenido-table{
+    padding: 10%;
+}
+
+/*Estilo main Nosotros*/
+.body-nosotros{
+    background-image: url("../img/emails.jpg");
+    background-size: 110rem;
+    background-repeat: no-repeat;
+    background-color: #FDFFA9;
+}
+.tituloNosotros{
+    font-family: "Loves";
+    color: #FDFFA9;
+    font-weight: bolder;
+    font-size: 100px;
+    width: 30%;
+    margin:20% 30% 55% 10%;
+    margin-left: 10%;
+}
+.generalText{
+    margin:15%;
+    font-size: 20px;
+    text-align: center;
+    font-family:'Gill Sans';
+}
+/* Estilo de main Cursos */
+.body-cursos{
+    background-image: url("../img/meeting.jpg");
+    background-size: 90rem;
+    background-repeat: no-repeat;
+    background-color: #FDFFA9;
+}
+.mainCursos{
+    margin-bottom: 5%;
+}
+.tituloCursos{
+    font-family: "Loves";
+    color: #FDFFA9;
+    font-weight: bolder;
+    font-size: 100px;
+    width: 30%;
+    margin:20%;
+    margin-left: 10%;
+}
+.infoCursos{
+    width: 80%;
+}
+.subtitulos{
+    font-family: "Loves";
+    color: #019267;
+    font-weight: bold;
+    font-size: 60px;
+    margin-left: 10%;
+}
+.dudas{
+    font-size: 40px;
+    margin-left: 10%;
+    font-family: 'Gill Sans';
+    color: #007457;
+}
+.generalTextCursos{
+    margin-left: 10%;
+    font-size: 20px;
+    text-align: left;
+    font-family:'Gill Sans';
+    
+}
+/* Estilo main Blog */
+.body-blog{
+    background-image: url("../img/conocenos.jpg");
+    background-size: 110rem;
+    background-repeat: no-repeat;
+    background-color: #FDFFA9;
+}
+.mainBlog{
+    margin-bottom: 5%;
+}
+.tituloBlog{
+    font-family: "Loves";
+    color: #FDFFA9;
+    font-weight: bolder;
+    font-size: 100px;
+    width: 30%;
+    margin:20% 30% 40% 10%;
+}
+.subtitulos{
+    font-family: "Alegre";
+    color: #019267;
+    font-weight:lighter;
+    font-size: 60px;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.textBlog{
+    font-size: 20px;
+    text-align: center;
+    font-family:'Gill Sans';
+}
+.imgBlog{
+    float: right;
+    width: 300px;
     height: auto;
+}
+
+/* Estilo main contacto */
+.body-contacto{
+    background-image: url("../img/cellphone.jpg");
+    background-repeat: no-repeat;
+    background-size: 110rem;
+}
+.tituloContacto{
+    font-family: "Loves";
+    color: #FDFFA9;
+    font-weight: bolder;
+    font-size: 100px;
+    width: 30%;
+    margin: 20% 30% 20% 10%;
+}
+.form{
+    border: solid 1px;
+    max-width: 400px;
+    margin:60px auto;
+    position: relative;
+    background-color:#FDFFA9;
+}
+.contenidoContacto{
+    text-align: center;
+    font-family: 'Gill Sans';
+    font-size: 18px;
+    color: #007457;
+    font-weight: bold;
 }
