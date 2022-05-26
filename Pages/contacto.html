@@ -1,80 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Inglés con F&C</title>
     <link rel="shortcut icon" href="../img/fyc.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ba4b89423f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
-<body class="body-contacto">
-    <!-- fila de logo + nav --> 
-    <header class="header">
+
+<body class="container-fluid p-0">
+    <!-- fila de logo + nav -->
+    <header class="d-flex justify-content-around" style="background-color: #FFCDAB;">
         <div>
-            <a href="../index.html" class="configLogo">
-                <img alt="Ingles con F y C" src="../img/fyc.jpg" class="logo">
+            <a href="../index.html">
+                <img alt="Ingles con F y C" src="../img/fyc.jpg" class="logo p-1">
             </a>
         </div>
-        <nav>
-            <ul class="navegacion">
-                <li class="navegacion__items"><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li class="navegacion__items"><a href="../pages/cursos.html">Cursos</a></li>
-                <li class="navegacion__items"><a href="../pages/contacto.html">Contacto</a></li>
-                <li class="navegacion__items"><a href="../pages/blog.html">Blog</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md" style="background-color: #FFCDAB;">
+            <div>
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav p-1">
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #5D5D5A" href="../Pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #5D5D5A" href="../Pages/cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #5D5D5A" href="../Pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #5D5D5A" href="../Pages/blog.html">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- cierre de fila logo + nav -->
     <!-- fila de información de mi sitio -->
-    <main>
-        <h2 class="tituloContacto">Consultas</h2>
+    <main style="background-color: #FFF4E3;">
+        <section class="backgroundContacto d-flex align-items-center">
+            <div class="col-6 p-5">
+                <h2 class="tituloPortada sizeTitulos animate__animated animate__fadeIn" style="color: #FFA45C">Consultas
+                </h2>
+            </div>
+        </section>
         <!-- formulario de contacto -->
-        <form action="" method="post" enctype="text/plain" class="form">
-            
-            <p class="contenidoContacto"><label for="nombre">Nombre  </label><input type="text" id="fname" name="fname" placeholder="Nombre"></p>
-            <p class="contenidoContacto"><label for="mail">Mail  </label><input type="email" name="mail" id="mail" placeholder="Email"></p>
-            <p class="contenidoContacto"><label for="telefono">Teléfono  </label><input type="number" name="telefono" id="telefono" placeholder="Teléfono"></p>
-            <p class="contenidoContacto"><label for="Consulta">Consulta acerca de  </label><select name="opciones" id="opciones">
-                <option disabled selected>Indicá el motivo de tu consulta</option>
-                <option value="viajeros">Inglés para viajeros</option>
-                <option value="in-company">Inglés in-company</option>
-                <option value="flex">Inglés FLEX</option>
-                <option value="otros">Otros</option>
-            </select></p>
-            <p class="contenidoContacto"><label for="comentarios">Comentarios</label></p>
-            <p class="contenidoContacto"><textarea name="comentarios" id="comentarios" cols="30" rows="10" value="comentarios" placeholder="Comentarios"></textarea></p>
-            <input type="button" value="Enviar" class="btn contenidoContacto">
-        </form>
+        <div class="container p-5">
+            <form action="" method="post" enctype="text/plain">
+                <div class="mb-3">
+                    <label for="formInput1" class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control" id="formInput1" placeholder="Nombre completo">
+                </div>
+                <div class="mb-3">
+                    <label for="formInput2" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="formInput2" placeholder="nombre@email.com">
+                </div>
+                <div class="mb-3">
+                    <label for="formInput3" class="form-label">Teléfono</label>
+                    <input type="number" class="form-control" id="formInput3" placeholder="Teléfono">
+                </div>
+                <div class="mb-3">
+                    <label for="Consulta" class="form-label">Consulta acerca de </label><select name="opciones"
+                        id="opciones">
+                        <option disabled selected>Indicá el motivo de tu consulta</option>
+                        <option value="turistas">Inglés para turistas</option>
+                        <option value="in-company">Inglés in-company</option>
+                        <option value="flex">Inglés FLEX</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="formImput4" class="form-label">Comentarios</label>
+                    <textarea class="form-control" id="formInput4" rows="3"></textarea>
+                </div>
+                <input type="button" value="Enviar" class="btn" style="background-color: #FFCDAB; color: #5D5D5A;">
+            </form>
+        </div>
         <!-- cierre de formulario de contacto -->
     </main>
-    <hr>
-    <!-- inicio de footer --> 
-    <footer class="footer-basic">
-        <div class="contenedor">
-            <div class="contenedor__columnas">
-                <h4 class="map title">Mapa del sitio</h4>
+    <!-- inicio de footer -->
+    <footer style="background-color: #FFCDAB;">
+        <div class="d-flex justify-content-around">
+            <div class="col-6">
+                <h4 class="col-6 text-center tituloFooter">Mapa del sitio</h4>
                 <nav>
-                <ul class="map__list contenido-listas">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../Pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="../pages/cursos.html">Cursos</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                    <li><a href="../pages/blog.html">Blog</a></li>
-                </ul>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="generalText text-decoration-none"
+                                style="color: #5D5D5A">Inicio</a></li>
+                        <li><a href="../Pages/nosotros.html" class="generalText text-decoration-none"
+                                style="color: #5D5D5A">Nosotros</a></li>
+                        <li><a href="../pages/cursos.html" class="generalText text-decoration-none"
+                                style="color: #5D5D5A">Cursos</a></li>
+                        <li><a href="../pages/contacto.html" class="generalText text-decoration-none"
+                                style="color: #5D5D5A">Contacto</a></li>
+                        <li><a href="../pages/blog.html" class="generalText text-decoration-none"
+                                style="color: #5D5D5A">Blog</a></li>
+                    </ul>
                 </nav>
             </div>
-            <div class="contenedor__columnas">
-                <h4 class="social title">Redes sociales</h4>
-                <ul class="social__list contenido-listas">
-                    <li><a href="https://facebook.com" target="blank">Facebook</a></li>
-                    <li><a href="https://instagram.com" target="blank">Instagram</a></li>
-                    <li><a href="https://linkedin.com" target="blank">Linkedin</a></li>
-                    <li><a href="https://twitter.com" target="blank">Twitter</a></li>
-                </ul>
+            <div class="col-4">
+                <h4 class="col-6 text-center tituloFooter">Redes sociales</h4>
+                <div class="d-flex justify-content-evenly">
+                    <a href="https://facebook.com" target="blank" class="navbar-brand" style="color: #5D5D5A">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" target="blank" class="navbar-brand" style="color: #5D5D5A">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="blank" class="navbar-brand" style="color: #5D5D5A">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://twitter.com" target="blank" class="navbar-brand" style="color: #5D5D5A">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
             </div>
-            
-        </div>  
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
