@@ -1,0 +1,32 @@
+@import "backgrounds";
+@import "variantes";
+@import "textos";
+@import "footer";
+
+*{
+    padding: 0%;
+}
+ 
+@font-face{
+    font-family:"Loves";
+    src: url("../fonts/LOVES.ttf");
+}
+@font-face {
+    font-family: "Alegre";
+    src: url("../fonts/AlegreSans-Regular.ttf");
+}
+ 
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+main{
+    background-color: $lightOrange;
+}
+ 
+.logo{
+    width: 25%;
+    height: auto;
+}
+
+ 
+

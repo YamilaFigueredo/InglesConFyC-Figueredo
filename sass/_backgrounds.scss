@@ -1,0 +1,25 @@
+.background{
+    opacity: 0.8;
+    background-position: center center;
+    background-size: cover;
+    height: 90vh;
+}
+
+.backgroundNosotros{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url(../img/conocenos.jpg);
+}
+.backgroundCursos{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url(../img/cellphone.jpg);
+}
+.backgroundBlog{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url(../img/meeting.jpg);
+}
+.backgroundContacto{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url(../img/emails.jpg);
+}
+
+.backgroundPortada{
+    background-image: url(../img/smiling.jpg);
+    background-position: center center;
+    height: 90vh;
+}

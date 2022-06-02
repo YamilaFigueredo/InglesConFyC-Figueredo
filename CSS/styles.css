@@ -1,0 +1,69 @@
+.background {
+  opacity: 0.8;
+  background-position: center center;
+  background-size: cover;
+  height: 90vh; }
+
+.backgroundNosotros {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../img/conocenos.jpg); }
+
+.backgroundCursos {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../img/cellphone.jpg); }
+
+.backgroundBlog {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../img/meeting.jpg); }
+
+.backgroundContacto {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../img/emails.jpg); }
+
+.backgroundPortada {
+  background-image: url(../img/smiling.jpg);
+  background-position: center center;
+  height: 90vh; }
+
+/* Colores */
+/* Titulos, subtitulos y textos */
+.tituloPortada {
+  font-family: "Loves";
+  font-weight: bolder; }
+
+.sizeTitulos {
+  font-size: 3rem; }
+
+.subtitulos {
+  font-family: "Alegre";
+  font-size: 1.5rem; }
+
+.tituloFooter {
+  font-family: "Loves";
+  font-size: 1rem;
+  font-weight: bolder; }
+
+.generalText {
+  font-size: 0.8rem; }
+
+footer {
+  background-color: #FFCDAB; }
+  footer a {
+    color: #5D5D5A; }
+
+* {
+  padding: 0%; }
+
+@font-face {
+  font-family: "Loves";
+  src: url("../fonts/LOVES.ttf"); }
+
+@font-face {
+  font-family: "Alegre";
+  src: url("../fonts/AlegreSans-Regular.ttf"); }
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+
+main {
+  background-color: #FFF4E3; }
+
+.logo {
+  width: 25%;
+  height: auto; }
