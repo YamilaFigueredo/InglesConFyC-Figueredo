@@ -6,15 +6,19 @@
 }
 
 .backgroundNosotros{
+    @extend .background;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url(../img/conocenos.jpg);
 }
 .backgroundCursos{
+    @extend .background;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url(../img/cellphone.jpg);
 }
 .backgroundBlog{
+    @extend .background;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url(../img/meeting.jpg);
 }
 .backgroundContacto{
+    @extend .background;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url(../img/emails.jpg);
 }
 

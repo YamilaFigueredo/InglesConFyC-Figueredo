@@ -28,5 +28,41 @@ main{
     height: auto;
 }
 
- 
+/* Map */
+$redes: (
+     twitter: #51aff8,
+     facebook: #2956a3,
+     linkedin: #0076b8,
+     instagram: #8305cc,
+ );
+
+@each $red, $color in $redes {
+    .red--#{$red}{
+        color: $color;
+        &:hover {
+            color: $grey;
+            .red__nombre {
+                color:$color;
+            }
+        }
+    }
+}
+.instagram {
+    color:map-get($redes, instagram)
+}
+
+/* Mixin */
+@mixin theme($theme: #f0a22d){
+    background-color: $theme;
+    color: $grey;
+}
+
+.generalText{
+    @include theme;
+    font-size: 0.8rem;
+}
+
+.contenido{
+    @include theme ($theme: $darkerOrange);
+}
 

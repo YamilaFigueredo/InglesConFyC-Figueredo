@@ -1,4 +1,4 @@
-.background {
+.background, .backgroundNosotros, .backgroundCursos, .backgroundBlog, .backgroundContacto {
   opacity: 0.8;
   background-position: center center;
   background-size: cover;
@@ -39,9 +39,6 @@
   font-size: 1rem;
   font-weight: bolder; }
 
-.generalText {
-  font-size: 0.8rem; }
-
 footer {
   background-color: #FFCDAB; }
   footer a {
@@ -67,3 +64,45 @@ main {
 .logo {
   width: 25%;
   height: auto; }
+
+/* Map */
+.red--twitter {
+  color: #51aff8; }
+  .red--twitter:hover {
+    color: #5D5D5A; }
+    .red--twitter:hover .red__nombre {
+      color: #51aff8; }
+
+.red--facebook {
+  color: #2956a3; }
+  .red--facebook:hover {
+    color: #5D5D5A; }
+    .red--facebook:hover .red__nombre {
+      color: #2956a3; }
+
+.red--linkedin {
+  color: #0076b8; }
+  .red--linkedin:hover {
+    color: #5D5D5A; }
+    .red--linkedin:hover .red__nombre {
+      color: #0076b8; }
+
+.red--instagram {
+  color: #8305cc; }
+  .red--instagram:hover {
+    color: #5D5D5A; }
+    .red--instagram:hover .red__nombre {
+      color: #8305cc; }
+
+.instagram {
+  color: #8305cc; }
+
+/* Mixin */
+.generalText {
+  background-color: #f0a22d;
+  color: #5D5D5A;
+  font-size: 0.8rem; }
+
+.contenido {
+  background-color: #FFCDAB;
+  color: #5D5D5A; }
