@@ -47,22 +47,3 @@ $redes: (
         }
     }
 }
-.instagram {
-    color:map-get($redes, instagram)
-}
-
-/* Mixin */
-@mixin theme($theme: #f0a22d){
-    background-color: $theme;
-    color: $grey;
-}
-
-.generalText{
-    @include theme;
-    font-size: 0.8rem;
-}
-
-.contenido{
-    @include theme ($theme: $darkerOrange);
-}
-

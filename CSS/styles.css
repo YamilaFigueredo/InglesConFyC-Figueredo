@@ -34,15 +34,25 @@
   font-family: "Alegre";
   font-size: 1.5rem; }
 
+.cursos {
+  font-size: 2rem;
+  padding: 1.5rem; }
+
 .tituloFooter {
   font-family: "Loves";
   font-size: 1rem;
   font-weight: bolder; }
 
+.contenido {
+  background-color: #fdd4b9; }
+
 footer {
   background-color: #FFCDAB; }
   footer a {
+    text-decoration: none;
     color: #5D5D5A; }
+    footer a :hover {
+      color: #FFF4E3; }
 
 * {
   padding: 0%; }
@@ -93,16 +103,3 @@ main {
     color: #5D5D5A; }
     .red--instagram:hover .red__nombre {
       color: #8305cc; }
-
-.instagram {
-  color: #8305cc; }
-
-/* Mixin */
-.generalText {
-  background-color: #f0a22d;
-  color: #5D5D5A;
-  font-size: 0.8rem; }
-
-.contenido {
-  background-color: #FFCDAB;
-  color: #5D5D5A; }
