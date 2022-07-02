@@ -44,15 +44,24 @@
   font-weight: bolder; }
 
 .contenido {
-  background-color: #fdd4b9; }
+  background-color: #EAEFBD; }
 
 footer {
-  background-color: #FFCDAB; }
+  background-color: #90BE6D; }
   footer a {
     text-decoration: none;
-    color: #5D5D5A; }
+    color: #133C55; }
     footer a :hover {
-      color: #FFF4E3; }
+      color: #C9E3AC; }
+
+header {
+  background-color: #90BE6D; }
+
+.nav-link {
+  color: #133C55;
+  text-decoration: none; }
+  .nav-link :hover {
+    color: #C9E3AC; }
 
 * {
   padding: 0%; }
@@ -69,37 +78,37 @@ body {
   font-family: Georgia, 'Times New Roman', Times, serif; }
 
 main {
-  background-color: #FFF4E3; }
+  background-color: #C9E3AC; }
 
 .logo {
-  width: 25%;
+  width: 150px;
   height: auto; }
 
 /* Map */
 .red--twitter {
   color: #51aff8; }
   .red--twitter:hover {
-    color: #5D5D5A; }
+    color: #133C55; }
     .red--twitter:hover .red__nombre {
       color: #51aff8; }
 
 .red--facebook {
   color: #2956a3; }
   .red--facebook:hover {
-    color: #5D5D5A; }
+    color: #133C55; }
     .red--facebook:hover .red__nombre {
       color: #2956a3; }
 
 .red--linkedin {
   color: #0076b8; }
   .red--linkedin:hover {
-    color: #5D5D5A; }
+    color: #133C55; }
     .red--linkedin:hover .red__nombre {
       color: #0076b8; }
 
 .red--instagram {
   color: #8305cc; }
   .red--instagram:hover {
-    color: #5D5D5A; }
+    color: #133C55; }
     .red--instagram:hover .red__nombre {
       color: #8305cc; }

@@ -1,0 +1,10 @@
+header{
+    background-color: $colorSecundario;
+}
+.nav-link{
+    color: $dark;
+    text-decoration: none;
+    :hover{
+        color: $colorPrimario;
+    }
+}

@@ -2,6 +2,7 @@
 @import "variantes";
 @import "textos";
 @import "footer";
+@import "header";
 
 *{
     padding: 0%;
@@ -20,11 +21,11 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 main{
-    background-color: $lightOrange;
+    background-color: $colorPrimario;
 }
  
 .logo{
-    width: 25%;
+    width: 150px;
     height: auto;
 }
 
@@ -40,7 +41,7 @@ $redes: (
     .red--#{$red}{
         color: $color;
         &:hover {
-            color: $grey;
+            color: $dark;
             .red__nombre {
                 color:$color;
             }

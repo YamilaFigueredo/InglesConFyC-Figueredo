@@ -1,10 +1,10 @@
 footer{
-    background-color: $darkerOrange;
+    background-color: $colorSecundario;
     a{
         text-decoration: none;
-        color: $grey;
+        color: $dark;
         :hover{
-            color: $lightOrange;
+            color: $colorPrimario;
         }
     }
 }
