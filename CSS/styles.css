@@ -27,8 +27,12 @@
   font-family: "Loves";
   font-weight: bolder; }
 
+.principal {
+  margin-left: 13%; }
+
 .sizeTitulos {
-  font-size: 3rem; }
+  font-size: 3rem;
+  color: #C9E3AC; }
 
 .subtitulos {
   font-family: "Alegre";
@@ -41,27 +45,28 @@
 .tituloFooter {
   font-family: "Loves";
   font-size: 1rem;
-  font-weight: bolder; }
+  font-weight: bolder;
+  margin-top: 15px; }
 
 .contenido {
   background-color: #EAEFBD; }
 
 footer {
   background-color: #90BE6D; }
-  footer a {
-    text-decoration: none;
-    color: #133C55; }
-    footer a :hover {
-      color: #C9E3AC; }
+
+.footerText {
+  text-decoration: none;
+  color: #133C55; }
+  .footerText:hover {
+    color: #C9E3AC; }
 
 header {
   background-color: #90BE6D; }
 
 .nav-link {
-  color: #133C55;
-  text-decoration: none; }
-  .nav-link :hover {
-    color: #C9E3AC; }
+  color: #C9E3AC; }
+  .nav-link:hover {
+    color: #EAEFBD; }
 
 * {
   padding: 0%; }
@@ -112,3 +117,9 @@ main {
     color: #133C55; }
     .red--instagram:hover .red__nombre {
       color: #8305cc; }
+
+.btn {
+  background-color: #90BE6D;
+  color: #133C55; }
+  .btn:hover {
+    background-color: #EAEFBD; }

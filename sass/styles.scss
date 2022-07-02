@@ -48,3 +48,11 @@ $redes: (
         }
     }
 }
+
+.btn{
+    background-color: $colorSecundario;
+    color: $dark;
+    &:hover{
+        background-color: $colorTerciario;
+    }
+}
